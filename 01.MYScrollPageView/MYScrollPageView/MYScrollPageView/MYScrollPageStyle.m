@@ -28,6 +28,8 @@
         _titleScrollLineHeight = 2;                     // 文字下方滚动条高度，默认 2
         _titleScrollLineColor  = _titleSelectedColor;   // 文字下方滚动条颜色，默认橘色
         
+        _isTitleScrollLineShow = YES;  // 文字下方滚动条是否显示，默认 YES
+        
         // MYScrollPageCollectionView
     }
     return self;

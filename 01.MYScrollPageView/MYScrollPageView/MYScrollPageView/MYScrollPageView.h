@@ -11,6 +11,7 @@
 
 @interface MYScrollPageView : UIView
 
+@property (nonatomic, readonly, strong) NSArray <UIViewController *>*childVCs;
 
 - (instancetype)initWithFrame:(CGRect)frame
                        titles:(NSArray<NSString *> *)titles

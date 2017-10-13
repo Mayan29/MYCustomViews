@@ -56,6 +56,11 @@
     [self addSubview:_collectionView];
 }
 
+- (NSArray<UIViewController *> *)childVCs
+{
+    return _childVCs;
+}
+
 #pragma mark - MYScrollPageTitleBarDelegate
 // 点击 titleBarItem 改变 UICollectionView contentOffset
 - (void)scrollPageTitleBar:(MYScrollPageTitleBar *)scrollPageTitleBar clickItem:(NSInteger)item

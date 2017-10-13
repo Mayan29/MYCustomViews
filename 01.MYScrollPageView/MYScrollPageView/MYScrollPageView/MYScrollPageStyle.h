@@ -24,7 +24,7 @@
 @property (nonatomic, assign) CGFloat  titleScrollLineHeight;  // 文字下方滚动条高度，默认 2
 @property (nonatomic, strong) UIColor *titleScrollLineColor;   // 文字下方滚动条颜色，默认橘色
 
-@property (nonatomic, assign) BOOL isTitleScrollLineShow;  // 文字下方滚动条是否显示
+@property (nonatomic, assign) BOOL isTitleScrollLineShow;  // 文字下方滚动条是否显示，默认 YES
 
 // MYScrollPageCollectionView
 
