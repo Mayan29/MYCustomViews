@@ -75,7 +75,7 @@
     firstLabel.textColor = _style.titleSelectedColor;
     
     // 设置初始化滚动条
-    if (_style.type == MYScrollPageStyleTypeDefault1) {
+    if (_style.isTitleScrollLineShow) {
         _lineView = [[UIView alloc] initWithFrame:CGRectMake(firstLabel.frame.origin.x, _style.titleBarHeight, firstLabel.frame.size.width, _style.titleScrollLineHeight)];
         _lineView.backgroundColor = _style.titleScrollLineColor;
         [self addSubview:_lineView];
@@ -131,7 +131,7 @@
         newLabel = [self viewWithTag:(index + 100 + 1)];
 
         // 底部滚动条位置
-        if (_style.type == MYScrollPageStyleTypeDefault1) {
+        if (_style.isTitleScrollLineShow) {
             CGFloat oldX = oldLabel.frame.origin.x;
             CGFloat oldW = oldLabel.frame.size.width;
             CGFloat newX = newLabel.frame.origin.x;
@@ -170,7 +170,7 @@
         newLabel = [self viewWithTag:(index + 100)];
         
         // 底部滚动条位置
-        if (_style.type == MYScrollPageStyleTypeDefault1) {
+        if (_style.isTitleScrollLineShow) {
             // 底部滚动条位置
             CGFloat oldX = oldLabel.frame.origin.x;
             CGFloat oldW = oldLabel.frame.size.width;

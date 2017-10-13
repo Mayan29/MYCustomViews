@@ -8,16 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-typedef NS_ENUM(NSUInteger, MYScrollPageStyleType) {
-    MYScrollPageStyleTypeDefault1,  // 带底部滚动条
-    MYScrollPageStyleTypeDefault2,  // 不带底部滚动条
-    MYScrollPageStyleTypeDefault3,  // 所选 item 文字放大
-};
-
 @interface MYScrollPageStyle : NSObject
 
 // MYScrollPageView
-@property (nonatomic, assign) MYScrollPageStyleType type;
+
 
 // MYScrollPageTitleBar
 @property (nonatomic, assign) CGFloat titleBarHeight;   // titleBar 高度，默认 44
@@ -29,6 +23,8 @@ typedef NS_ENUM(NSUInteger, MYScrollPageStyleType) {
 
 @property (nonatomic, assign) CGFloat  titleScrollLineHeight;  // 文字下方滚动条高度，默认 2
 @property (nonatomic, strong) UIColor *titleScrollLineColor;   // 文字下方滚动条颜色，默认橘色
+
+@property (nonatomic, assign) BOOL isTitleScrollLineShow;  // 文字下方滚动条是否显示
 
 // MYScrollPageCollectionView
 

@@ -44,7 +44,7 @@
 
 - (void)setupUI
 {
-    CGRect titleBarF = CGRectMake(0, 0, self.bounds.size.width, _style.titleBarHeight + (_style.type == MYScrollPageStyleTypeDefault1 ? _style.titleScrollLineHeight : 0));
+    CGRect titleBarF = CGRectMake(0, 0, self.bounds.size.width, _style.titleBarHeight + (_style.isTitleScrollLineShow ? _style.titleScrollLineHeight : 0));
     CGRect collectionViewF = CGRectMake(0, CGRectGetMaxY(titleBarF), self.bounds.size.width, self.bounds.size.height - titleBarF.size.height);
     
     _titleBar = [[MYScrollPageTitleBar alloc] initWithFrame:titleBarF titles:_titles style:_style];

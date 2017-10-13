@@ -34,7 +34,6 @@
     }
     // 4. 样式
     MYScrollPageStyle *style = [[MYScrollPageStyle alloc] init];
-    style.type = MYScrollPageStyleTypeDefault3;
     
     MYScrollPageView *pageView = [[MYScrollPageView alloc] initWithFrame:frame titles:titles childVCs:childVCs style:style];
     [self.view addSubview:pageView];

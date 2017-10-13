@@ -16,7 +16,6 @@
     if (self) {
         
         // MYScrollPageView
-        _type = MYScrollPageStyleTypeDefault1;
         
         // MYScrollPageTitleBar
         _titleBarHeight  = 44;  // titleBar 高度，默认 44
@@ -28,6 +27,8 @@
         
         _titleScrollLineHeight = 2;                     // 文字下方滚动条高度，默认 2
         _titleScrollLineColor  = _titleSelectedColor;   // 文字下方滚动条颜色，默认橘色
+        
+        // MYScrollPageCollectionView
     }
     return self;
 }
