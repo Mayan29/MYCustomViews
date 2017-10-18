@@ -14,8 +14,10 @@
 
 
 // MYScrollPageTitleBar
-@property (nonatomic, assign) CGFloat titleBarHeight;   // titleBar 高度，默认 44
-@property (nonatomic, assign) CGFloat titleItemMargin;  // titleItem 间隔，默认 30
+@property (nonatomic, assign) CGFloat  titleBarHeight;           // titleBar 高度，默认 44
+@property (nonatomic, assign) CGFloat  titleItemMargin;          // titleItem 间隔，默认 30
+@property (nonatomic, assign) UIColor *titleBarBackgroundColor;  // titleBar 背景色，默认白色
+
 
 @property (nonatomic, strong) UIColor  *titleNormalColor;    // 文字未选中状态颜色，默认黑色
 @property (nonatomic, strong) UIColor  *titleSelectedColor;  // 文字选中状态颜色，默认橘色

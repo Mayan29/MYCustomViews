@@ -27,3 +27,10 @@
 
 ![03.gif](https://github.com/Mayan29/MYCustomViews/blob/master/DATA/03.gif)
 
+
+### 04. MYGiftKeyboard（直播礼物键盘）
+
+仿目前主流直播 APP 礼物键盘，model 和 cell 在接入项目时需要再完善
+
+![04.gif](https://github.com/Mayan29/MYCustomViews/blob/master/DATA/04.gif)
+

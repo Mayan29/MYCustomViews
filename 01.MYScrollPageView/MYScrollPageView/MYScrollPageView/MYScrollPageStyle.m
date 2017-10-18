@@ -18,8 +18,10 @@
         // MYScrollPageView
         
         // MYScrollPageTitleBar
-        _titleBarHeight  = 44;  // titleBar 高度，默认 44
-        _titleItemMargin = 30;  // titleItem 间隔，默认 30
+        _titleBarHeight          = 44;                    // titleBar 高度，默认 44
+        _titleItemMargin         = 30;                    // titleItem 间隔，默认 30
+        _titleBarBackgroundColor = [UIColor whiteColor];  // titleBar 背景色，默认白色
+
         
         _titleNormalColor   = [UIColor blackColor];          // 文字未选中状态颜色，默认黑色
         _titleSelectedColor = [UIColor orangeColor];         // 文字选中状态颜色，默认橘色

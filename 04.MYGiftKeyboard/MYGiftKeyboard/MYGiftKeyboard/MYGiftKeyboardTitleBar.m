@@ -1,18 +1,18 @@
 //
-//  MYScrollPageTitleBar.m
-//  MYScrollPageView
+//  MYGiftKeyboardTitleBar.m
+//  MYGiftKeyboard
 //
-//  Created by mayan on 2017/10/11.
+//  Created by mayan on 2017/10/16.
 //  Copyright © 2017年 mayan. All rights reserved.
 //
 
-#import "MYScrollPageTitleBar.h"
-#import "MYScrollPageStyle.h"
+#import "MYGiftKeyboardTitleBar.h"
+#import "MYGiftKeyboardStyle.h"
 
-@interface MYScrollPageTitleBar ()
+@interface MYGiftKeyboardTitleBar ()
 
 @property (nonatomic, strong) NSArray<NSString *> *titles;
-@property (nonatomic, strong) MYScrollPageStyle   *style;
+@property (nonatomic, strong) MYGiftKeyboardStyle *style;
 
 @property (nonatomic, strong) UIView *lineView; // 文字下方滚动条
 
@@ -20,10 +20,10 @@
 
 @end
 
-@implementation MYScrollPageTitleBar
+@implementation MYGiftKeyboardTitleBar
 
 #pragma mark - Init
-- (instancetype)initWithFrame:(CGRect)frame titles:(NSArray<NSString *> *)titles style:(MYScrollPageStyle *)style
+- (instancetype)initWithFrame:(CGRect)frame titles:(NSArray<NSString *> *)titles style:(MYGiftKeyboardStyle *)style
 {
     self = [super initWithFrame:frame];
     if (self) {
@@ -47,12 +47,12 @@
         
         // 创建 titleLabel
         UILabel *label = [[UILabel alloc] init];
-        label.text            = title;
-        label.backgroundColor = _style.titleBarBackgroundColor;
-        label.textColor       = _style.titleNormalColor;
-        label.tag             = idx + 100;
-        label.font            = _style.titleFont;
-        label.textAlignment   = NSTextAlignmentCenter;
+        label.text                   = title;
+        label.backgroundColor        = _style.titleBarBackgroundColor;
+        label.textColor              = _style.titleNormalColor;
+        label.tag                    = idx + 100;
+        label.font                   = _style.titleFont;
+        label.textAlignment          = NSTextAlignmentCenter;
         label.userInteractionEnabled = YES;
         [self addSubview:label];
         
@@ -81,7 +81,7 @@
         for (int i = 0; i < _titles.count; i++) {
             
             UILabel *label =  [self viewWithTag:i + 100];
-           
+            
             CGFloat w = label.frame.size.width + addMargin;
             CGFloat x = (i == 0) ? 0 : CGRectGetMaxX([self viewWithTag:(i - 1 + 100)].frame);
             
@@ -116,7 +116,7 @@
 - (void)setCurrentLabelTag:(NSInteger)currentLabelTag
 {
     if (_currentLabelTag == currentLabelTag) return;
-
+    
     _currentLabelTag = currentLabelTag;
     
     // 调整位置，使选中的 label 滚动到中间
@@ -132,23 +132,15 @@
 }
 
 // 滑动中
-- (void)scrollViewDidScroll:(UICollectionView *)collectionView direction:(NSString *)direction
+- (void)scrollViewDidScrollCurrentItem:(NSInteger)currentItem progress:(CGFloat)progress direction:(NSString *)direction
 {
-    CGFloat num = collectionView.contentOffset.x / collectionView.bounds.size.width;
-    
-    NSInteger index  = floor(num);
-    CGFloat progress = num - index;
-    
-    UILabel *oldLabel = nil;
-    UILabel *newLabel = nil;
-    
     if ([direction isEqualToString:@"向左"]) {
         
-        self.currentLabelTag = index + 100;
+        self.currentLabelTag = currentItem + 100;
         
-        oldLabel = [self viewWithTag:(index + 100)];
-        newLabel = [self viewWithTag:(index + 100 + 1)];
-
+        UILabel *oldLabel = [self viewWithTag:(currentItem + 100)];
+        UILabel *newLabel = [self viewWithTag:(currentItem + 100 + 1)];
+        
         // 底部滚动条位置
         if (_style.isTitleScrollLineShow) {
             CGFloat oldX = oldLabel.frame.origin.x;
@@ -180,13 +172,13 @@
     } else if ([direction isEqualToString:@"向右"]) {
         
         if (progress < 0.1) {
-            self.currentLabelTag = index + 100;
+            self.currentLabelTag = currentItem + 100;
         } else {
-            self.currentLabelTag = index + 1 + 100;
+            self.currentLabelTag = currentItem + 1 + 100;
         }
         
-        oldLabel = [self viewWithTag:(index + 100 + 1)];
-        newLabel = [self viewWithTag:(index + 100)];
+        UILabel *oldLabel = [self viewWithTag:(currentItem + 100 + 1)];
+        UILabel *newLabel = [self viewWithTag:(currentItem + 100)];
         
         // 底部滚动条位置
         if (_style.isTitleScrollLineShow) {
@@ -199,7 +191,7 @@
             CGFloat currentW = newW + (oldW - newW) * progress;
             _lineView.frame = CGRectMake(currentX, _lineView.frame.origin.y, currentW, _lineView.frame.size.height);
         }
-            
+        
         // 文字颜色
         CGFloat normalR, normalG, normalB, normalA = 0.0;
         CGFloat selectedR, selectedG, selectedB, selectedA = 0.0;
@@ -216,6 +208,15 @@
         CGFloat newA = selectedA + (normalA - selectedA) * progress;
         oldLabel.textColor = [UIColor colorWithRed:oldR green:oldG blue:oldB alpha:oldA];
         newLabel.textColor = [UIColor colorWithRed:newR green:newG blue:newB alpha:newA];
+    }
+}
+
+// 停止滑动
+- (void)scrollViewDidEndDecelerating
+{
+    for (int i = 0; i < _titles.count; i++) {
+        UILabel *label = [self viewWithTag:i + 100];
+        label.textColor = (i + 100 == _currentLabelTag) ? _style.titleSelectedColor : _style.titleNormalColor;
     }
 }
 

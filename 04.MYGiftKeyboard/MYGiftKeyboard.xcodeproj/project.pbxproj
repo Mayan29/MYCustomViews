@@ -1,0 +1,611 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BC7A70401F96058F00E334D1 /* MYGiftKeyboardBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7A703F1F96058E00E334D1 /* MYGiftKeyboardBottomView.m */; };
+		BC7A70431F96FB3500E334D1 /* MYGiftKeyboardCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7A70421F96FB3500E334D1 /* MYGiftKeyboardCollectionViewCell.m */; };
+		BC7A70461F97586C00E334D1 /* MYGiftKeyboardModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7A70451F97586C00E334D1 /* MYGiftKeyboardModel.m */; };
+		BCBC55C51F94497800C73EE7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBC55C41F94497800C73EE7 /* AppDelegate.m */; };
+		BCBC55C81F94497800C73EE7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBC55C71F94497800C73EE7 /* ViewController.m */; };
+		BCBC55CB1F94497800C73EE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCBC55C91F94497800C73EE7 /* Main.storyboard */; };
+		BCBC55CD1F94497800C73EE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCBC55CC1F94497800C73EE7 /* Assets.xcassets */; };
+		BCBC55D01F94497800C73EE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCBC55CE1F94497800C73EE7 /* LaunchScreen.storyboard */; };
+		BCBC55D31F94497800C73EE7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBC55D21F94497800C73EE7 /* main.m */; };
+		BCBC55DD1F94497900C73EE7 /* MYGiftKeyboardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBC55DC1F94497900C73EE7 /* MYGiftKeyboardTests.m */; };
+		BCBC55E81F94497900C73EE7 /* MYGiftKeyboardUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBC55E71F94497900C73EE7 /* MYGiftKeyboardUITests.m */; };
+		BCBC55F81F944AF100C73EE7 /* MYGiftKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBC55F71F944AF100C73EE7 /* MYGiftKeyboard.m */; };
+		BCBC55FB1F944F1C00C73EE7 /* MYGiftKeyboardTitleBar.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBC55FA1F944F1C00C73EE7 /* MYGiftKeyboardTitleBar.m */; };
+		BCBC55FE1F94503E00C73EE7 /* MYGiftKeyboardCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBC55FD1F94503E00C73EE7 /* MYGiftKeyboardCollectionView.m */; };
+		BCBC56011F9450AC00C73EE7 /* MYGiftKeyboardStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBC56001F9450AC00C73EE7 /* MYGiftKeyboardStyle.m */; };
+		BCBC56041F94A26100C73EE7 /* MYGiftKeyboardCollectionLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBC56031F94A26100C73EE7 /* MYGiftKeyboardCollectionLayout.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BCBC55D91F94497900C73EE7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCBC55B81F94497800C73EE7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCBC55BF1F94497800C73EE7;
+			remoteInfo = MYGiftKeyboard;
+		};
+		BCBC55E41F94497900C73EE7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCBC55B81F94497800C73EE7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCBC55BF1F94497800C73EE7;
+			remoteInfo = MYGiftKeyboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BC7A703E1F96058E00E334D1 /* MYGiftKeyboardBottomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYGiftKeyboardBottomView.h; sourceTree = "<group>"; };
+		BC7A703F1F96058E00E334D1 /* MYGiftKeyboardBottomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYGiftKeyboardBottomView.m; sourceTree = "<group>"; };
+		BC7A70411F96FB3500E334D1 /* MYGiftKeyboardCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYGiftKeyboardCollectionViewCell.h; sourceTree = "<group>"; };
+		BC7A70421F96FB3500E334D1 /* MYGiftKeyboardCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYGiftKeyboardCollectionViewCell.m; sourceTree = "<group>"; };
+		BC7A70441F97586C00E334D1 /* MYGiftKeyboardModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYGiftKeyboardModel.h; sourceTree = "<group>"; };
+		BC7A70451F97586C00E334D1 /* MYGiftKeyboardModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYGiftKeyboardModel.m; sourceTree = "<group>"; };
+		BCBC55C01F94497800C73EE7 /* MYGiftKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MYGiftKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCBC55C31F94497800C73EE7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BCBC55C41F94497800C73EE7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BCBC55C61F94497800C73EE7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BCBC55C71F94497800C73EE7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BCBC55CA1F94497800C73EE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BCBC55CC1F94497800C73EE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BCBC55CF1F94497800C73EE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BCBC55D11F94497800C73EE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCBC55D21F94497800C73EE7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BCBC55D81F94497900C73EE7 /* MYGiftKeyboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MYGiftKeyboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCBC55DC1F94497900C73EE7 /* MYGiftKeyboardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYGiftKeyboardTests.m; sourceTree = "<group>"; };
+		BCBC55DE1F94497900C73EE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCBC55E31F94497900C73EE7 /* MYGiftKeyboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MYGiftKeyboardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCBC55E71F94497900C73EE7 /* MYGiftKeyboardUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYGiftKeyboardUITests.m; sourceTree = "<group>"; };
+		BCBC55E91F94497900C73EE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCBC55F61F944AF100C73EE7 /* MYGiftKeyboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYGiftKeyboard.h; sourceTree = "<group>"; };
+		BCBC55F71F944AF100C73EE7 /* MYGiftKeyboard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYGiftKeyboard.m; sourceTree = "<group>"; };
+		BCBC55F91F944F1C00C73EE7 /* MYGiftKeyboardTitleBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYGiftKeyboardTitleBar.h; sourceTree = "<group>"; };
+		BCBC55FA1F944F1C00C73EE7 /* MYGiftKeyboardTitleBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYGiftKeyboardTitleBar.m; sourceTree = "<group>"; };
+		BCBC55FC1F94503E00C73EE7 /* MYGiftKeyboardCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYGiftKeyboardCollectionView.h; sourceTree = "<group>"; };
+		BCBC55FD1F94503E00C73EE7 /* MYGiftKeyboardCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYGiftKeyboardCollectionView.m; sourceTree = "<group>"; };
+		BCBC55FF1F9450AC00C73EE7 /* MYGiftKeyboardStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYGiftKeyboardStyle.h; sourceTree = "<group>"; };
+		BCBC56001F9450AC00C73EE7 /* MYGiftKeyboardStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYGiftKeyboardStyle.m; sourceTree = "<group>"; };
+		BCBC56021F94A26000C73EE7 /* MYGiftKeyboardCollectionLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYGiftKeyboardCollectionLayout.h; sourceTree = "<group>"; };
+		BCBC56031F94A26100C73EE7 /* MYGiftKeyboardCollectionLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYGiftKeyboardCollectionLayout.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BCBC55BD1F94497800C73EE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCBC55D51F94497900C73EE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCBC55E01F94497900C73EE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BCBC55B71F94497800C73EE7 = {
+			isa = PBXGroup;
+			children = (
+				BCBC55C21F94497800C73EE7 /* MYGiftKeyboard */,
+				BCBC55DB1F94497900C73EE7 /* MYGiftKeyboardTests */,
+				BCBC55E61F94497900C73EE7 /* MYGiftKeyboardUITests */,
+				BCBC55C11F94497800C73EE7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BCBC55C11F94497800C73EE7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BCBC55C01F94497800C73EE7 /* MYGiftKeyboard.app */,
+				BCBC55D81F94497900C73EE7 /* MYGiftKeyboardTests.xctest */,
+				BCBC55E31F94497900C73EE7 /* MYGiftKeyboardUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BCBC55C21F94497800C73EE7 /* MYGiftKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				BCBC55F51F9449CE00C73EE7 /* MYGiftKeyboard */,
+				BCBC55C31F94497800C73EE7 /* AppDelegate.h */,
+				BCBC55C41F94497800C73EE7 /* AppDelegate.m */,
+				BCBC55C61F94497800C73EE7 /* ViewController.h */,
+				BCBC55C71F94497800C73EE7 /* ViewController.m */,
+				BCBC55C91F94497800C73EE7 /* Main.storyboard */,
+				BCBC55CC1F94497800C73EE7 /* Assets.xcassets */,
+				BCBC55CE1F94497800C73EE7 /* LaunchScreen.storyboard */,
+				BCBC55D11F94497800C73EE7 /* Info.plist */,
+				BCBC55D21F94497800C73EE7 /* main.m */,
+			);
+			path = MYGiftKeyboard;
+			sourceTree = "<group>";
+		};
+		BCBC55DB1F94497900C73EE7 /* MYGiftKeyboardTests */ = {
+			isa = PBXGroup;
+			children = (
+				BCBC55DC1F94497900C73EE7 /* MYGiftKeyboardTests.m */,
+				BCBC55DE1F94497900C73EE7 /* Info.plist */,
+			);
+			path = MYGiftKeyboardTests;
+			sourceTree = "<group>";
+		};
+		BCBC55E61F94497900C73EE7 /* MYGiftKeyboardUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BCBC55E71F94497900C73EE7 /* MYGiftKeyboardUITests.m */,
+				BCBC55E91F94497900C73EE7 /* Info.plist */,
+			);
+			path = MYGiftKeyboardUITests;
+			sourceTree = "<group>";
+		};
+		BCBC55F51F9449CE00C73EE7 /* MYGiftKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				BCBC55F61F944AF100C73EE7 /* MYGiftKeyboard.h */,
+				BCBC55F71F944AF100C73EE7 /* MYGiftKeyboard.m */,
+				BCBC55F91F944F1C00C73EE7 /* MYGiftKeyboardTitleBar.h */,
+				BCBC55FA1F944F1C00C73EE7 /* MYGiftKeyboardTitleBar.m */,
+				BCBC55FC1F94503E00C73EE7 /* MYGiftKeyboardCollectionView.h */,
+				BCBC55FD1F94503E00C73EE7 /* MYGiftKeyboardCollectionView.m */,
+				BC7A70411F96FB3500E334D1 /* MYGiftKeyboardCollectionViewCell.h */,
+				BC7A70421F96FB3500E334D1 /* MYGiftKeyboardCollectionViewCell.m */,
+				BC7A70441F97586C00E334D1 /* MYGiftKeyboardModel.h */,
+				BC7A70451F97586C00E334D1 /* MYGiftKeyboardModel.m */,
+				BCBC56021F94A26000C73EE7 /* MYGiftKeyboardCollectionLayout.h */,
+				BCBC56031F94A26100C73EE7 /* MYGiftKeyboardCollectionLayout.m */,
+				BC7A703E1F96058E00E334D1 /* MYGiftKeyboardBottomView.h */,
+				BC7A703F1F96058E00E334D1 /* MYGiftKeyboardBottomView.m */,
+				BCBC55FF1F9450AC00C73EE7 /* MYGiftKeyboardStyle.h */,
+				BCBC56001F9450AC00C73EE7 /* MYGiftKeyboardStyle.m */,
+			);
+			path = MYGiftKeyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BCBC55BF1F94497800C73EE7 /* MYGiftKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCBC55EC1F94497900C73EE7 /* Build configuration list for PBXNativeTarget "MYGiftKeyboard" */;
+			buildPhases = (
+				BCBC55BC1F94497800C73EE7 /* Sources */,
+				BCBC55BD1F94497800C73EE7 /* Frameworks */,
+				BCBC55BE1F94497800C73EE7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MYGiftKeyboard;
+			productName = MYGiftKeyboard;
+			productReference = BCBC55C01F94497800C73EE7 /* MYGiftKeyboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BCBC55D71F94497900C73EE7 /* MYGiftKeyboardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCBC55EF1F94497900C73EE7 /* Build configuration list for PBXNativeTarget "MYGiftKeyboardTests" */;
+			buildPhases = (
+				BCBC55D41F94497900C73EE7 /* Sources */,
+				BCBC55D51F94497900C73EE7 /* Frameworks */,
+				BCBC55D61F94497900C73EE7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCBC55DA1F94497900C73EE7 /* PBXTargetDependency */,
+			);
+			name = MYGiftKeyboardTests;
+			productName = MYGiftKeyboardTests;
+			productReference = BCBC55D81F94497900C73EE7 /* MYGiftKeyboardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BCBC55E21F94497900C73EE7 /* MYGiftKeyboardUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCBC55F21F94497900C73EE7 /* Build configuration list for PBXNativeTarget "MYGiftKeyboardUITests" */;
+			buildPhases = (
+				BCBC55DF1F94497900C73EE7 /* Sources */,
+				BCBC55E01F94497900C73EE7 /* Frameworks */,
+				BCBC55E11F94497900C73EE7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCBC55E51F94497900C73EE7 /* PBXTargetDependency */,
+			);
+			name = MYGiftKeyboardUITests;
+			productName = MYGiftKeyboardUITests;
+			productReference = BCBC55E31F94497900C73EE7 /* MYGiftKeyboardUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BCBC55B81F94497800C73EE7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = mayan;
+				TargetAttributes = {
+					BCBC55BF1F94497800C73EE7 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					BCBC55D71F94497900C73EE7 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BCBC55BF1F94497800C73EE7;
+					};
+					BCBC55E21F94497900C73EE7 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BCBC55BF1F94497800C73EE7;
+					};
+				};
+			};
+			buildConfigurationList = BCBC55BB1F94497800C73EE7 /* Build configuration list for PBXProject "MYGiftKeyboard" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BCBC55B71F94497800C73EE7;
+			productRefGroup = BCBC55C11F94497800C73EE7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BCBC55BF1F94497800C73EE7 /* MYGiftKeyboard */,
+				BCBC55D71F94497900C73EE7 /* MYGiftKeyboardTests */,
+				BCBC55E21F94497900C73EE7 /* MYGiftKeyboardUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BCBC55BE1F94497800C73EE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCBC55D01F94497800C73EE7 /* LaunchScreen.storyboard in Resources */,
+				BCBC55CD1F94497800C73EE7 /* Assets.xcassets in Resources */,
+				BCBC55CB1F94497800C73EE7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCBC55D61F94497900C73EE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCBC55E11F94497900C73EE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BCBC55BC1F94497800C73EE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCBC55F81F944AF100C73EE7 /* MYGiftKeyboard.m in Sources */,
+				BC7A70461F97586C00E334D1 /* MYGiftKeyboardModel.m in Sources */,
+				BCBC55FE1F94503E00C73EE7 /* MYGiftKeyboardCollectionView.m in Sources */,
+				BC7A70401F96058F00E334D1 /* MYGiftKeyboardBottomView.m in Sources */,
+				BCBC55FB1F944F1C00C73EE7 /* MYGiftKeyboardTitleBar.m in Sources */,
+				BCBC55C81F94497800C73EE7 /* ViewController.m in Sources */,
+				BC7A70431F96FB3500E334D1 /* MYGiftKeyboardCollectionViewCell.m in Sources */,
+				BCBC56041F94A26100C73EE7 /* MYGiftKeyboardCollectionLayout.m in Sources */,
+				BCBC56011F9450AC00C73EE7 /* MYGiftKeyboardStyle.m in Sources */,
+				BCBC55D31F94497800C73EE7 /* main.m in Sources */,
+				BCBC55C51F94497800C73EE7 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCBC55D41F94497900C73EE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCBC55DD1F94497900C73EE7 /* MYGiftKeyboardTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCBC55DF1F94497900C73EE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCBC55E81F94497900C73EE7 /* MYGiftKeyboardUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BCBC55DA1F94497900C73EE7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCBC55BF1F94497800C73EE7 /* MYGiftKeyboard */;
+			targetProxy = BCBC55D91F94497900C73EE7 /* PBXContainerItemProxy */;
+		};
+		BCBC55E51F94497900C73EE7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCBC55BF1F94497800C73EE7 /* MYGiftKeyboard */;
+			targetProxy = BCBC55E41F94497900C73EE7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BCBC55C91F94497800C73EE7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCBC55CA1F94497800C73EE7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BCBC55CE1F94497800C73EE7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCBC55CF1F94497800C73EE7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BCBC55EA1F94497900C73EE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BCBC55EB1F94497900C73EE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BCBC55ED1F94497900C73EE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T5Y5G8MDK4;
+				INFOPLIST_FILE = MYGiftKeyboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mayan.MYGiftKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		BCBC55EE1F94497900C73EE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T5Y5G8MDK4;
+				INFOPLIST_FILE = MYGiftKeyboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mayan.MYGiftKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		BCBC55F01F94497900C73EE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MYGiftKeyboardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mayan.MYGiftKeyboardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MYGiftKeyboard.app/MYGiftKeyboard";
+			};
+			name = Debug;
+		};
+		BCBC55F11F94497900C73EE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MYGiftKeyboardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mayan.MYGiftKeyboardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MYGiftKeyboard.app/MYGiftKeyboard";
+			};
+			name = Release;
+		};
+		BCBC55F31F94497900C73EE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MYGiftKeyboardUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mayan.MYGiftKeyboardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MYGiftKeyboard;
+			};
+			name = Debug;
+		};
+		BCBC55F41F94497900C73EE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MYGiftKeyboardUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mayan.MYGiftKeyboardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MYGiftKeyboard;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BCBC55BB1F94497800C73EE7 /* Build configuration list for PBXProject "MYGiftKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCBC55EA1F94497900C73EE7 /* Debug */,
+				BCBC55EB1F94497900C73EE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCBC55EC1F94497900C73EE7 /* Build configuration list for PBXNativeTarget "MYGiftKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCBC55ED1F94497900C73EE7 /* Debug */,
+				BCBC55EE1F94497900C73EE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCBC55EF1F94497900C73EE7 /* Build configuration list for PBXNativeTarget "MYGiftKeyboardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCBC55F01F94497900C73EE7 /* Debug */,
+				BCBC55F11F94497900C73EE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCBC55F21F94497900C73EE7 /* Build configuration list for PBXNativeTarget "MYGiftKeyboardUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCBC55F31F94497900C73EE7 /* Debug */,
+				BCBC55F41F94497900C73EE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BCBC55B81F94497800C73EE7 /* Project object */;
+}
