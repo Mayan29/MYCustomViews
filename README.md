@@ -41,3 +41,9 @@
 缺点很明显，UITextField 不能换行，只能实现简单的单行输入显示；优点是控件调用顺畅，简单。
 
 ![05.gif](https://github.com/Mayan29/MYCustomViews/blob/master/DATA/05.gif)
+
+### 06. MYPlacehoderTextView（带占位符的 UITextView）
+
+有好多种方法可以实现 UITextView 添加占位符，这个控件是使用 `drawRect:` 将文字画到 UITextView 上，个人觉得比其他方法在性能上能略微高效些。
+
+![06.gif](https://github.com/Mayan29/MYCustomViews/blob/master/DATA/06.gif)
