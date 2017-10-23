@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="DIu-Hc-zjd" customClass="MYChatToolsPrivateView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="愉快的和主播聊一聊吧" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g2c-PP-VOI">
+                    <rect key="frame" x="5" y="5" width="300" height="34"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oyT-wY-OrM">
+                    <rect key="frame" x="310" y="5" width="60" height="34"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="TTo-Ly-0ME"/>
+                    </constraints>
+                    <state key="normal" title="发送">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="sendMsgClick:" destination="DIu-Hc-zjd" eventType="touchUpInside" id="jeZ-G5-Xkx"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="oyT-wY-OrM" secondAttribute="bottom" constant="5" id="CV1-tI-Tf1"/>
+                <constraint firstItem="g2c-PP-VOI" firstAttribute="leading" secondItem="DIu-Hc-zjd" secondAttribute="leading" constant="5" id="Doc-0A-CuX"/>
+                <constraint firstItem="oyT-wY-OrM" firstAttribute="leading" secondItem="g2c-PP-VOI" secondAttribute="trailing" constant="5" id="gGk-Lj-LoL"/>
+                <constraint firstAttribute="trailing" secondItem="oyT-wY-OrM" secondAttribute="trailing" constant="5" id="iWv-9j-JYg"/>
+                <constraint firstAttribute="bottom" secondItem="g2c-PP-VOI" secondAttribute="bottom" constant="5" id="kcW-pG-Dme"/>
+                <constraint firstItem="oyT-wY-OrM" firstAttribute="top" secondItem="DIu-Hc-zjd" secondAttribute="top" constant="5" id="lCx-9f-p3l"/>
+                <constraint firstItem="g2c-PP-VOI" firstAttribute="top" secondItem="DIu-Hc-zjd" secondAttribute="top" constant="5" id="pSU-4F-nIe"/>
+                <constraint firstItem="oyT-wY-OrM" firstAttribute="leading" secondItem="g2c-PP-VOI" secondAttribute="trailing" constant="5" id="v3z-8e-rEb"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="inputTextField" destination="g2c-PP-VOI" id="tMx-jA-86s"/>
+                <outlet property="sendMsgButton" destination="oyT-wY-OrM" id="iz5-ej-6EF"/>
+            </connections>
+            <point key="canvasLocation" x="-249" y="-81"/>
+        </view>
+    </objects>
+</document>

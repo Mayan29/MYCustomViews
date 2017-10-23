@@ -34,3 +34,10 @@
 
 ![04.gif](https://github.com/Mayan29/MYCustomViews/blob/master/DATA/04.gif)
 
+### 05. MYChatToolsView（自定义键盘工具栏输入框）
+
+实现原理是，封装的控件 chatToolsView 是 frame 为 CGRectZero 的 UITextField，主要用途是抛砖引玉，实现调出键盘，内部封装一个私有 UITextField 才是真正的显示控件，将其设置为 chatToolsView 的 inputAccessoryView
+
+缺点很明显，UITextField 不能换行，只能实现简单的单行输入显示；优点是控件调用顺畅，简单。
+
+![05.gif](https://github.com/Mayan29/MYCustomViews/blob/master/DATA/05.gif)

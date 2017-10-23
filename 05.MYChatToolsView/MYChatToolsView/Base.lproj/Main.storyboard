@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vWA-gg-yOF"/>
+                        <viewControllerLayoutGuide type="bottom" id="O0S-Lp-Nfk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="krf-eF-bJ2">
+                                <rect key="frame" x="16" y="517" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="RaG-PC-7n5"/>
+                                    <constraint firstAttribute="width" constant="50" id="v2h-Bu-aJn"/>
+                                </constraints>
+                                <state key="normal" image="room_btn_chat"/>
+                                <connections>
+                                    <action selector="chatClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hng-Kd-oYm"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VMk-Az-Nqt">
+                                <rect key="frame" x="56" y="70" width="263" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="5iH-lK-44E"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.73637038469314575" green="0.93730670213699341" blue="0.92589068412780762" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="krf-eF-bJ2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="6A5-Kn-mrQ"/>
+                            <constraint firstItem="O0S-Lp-Nfk" firstAttribute="top" secondItem="krf-eF-bJ2" secondAttribute="bottom" constant="100" id="8J2-ei-hQU"/>
+                            <constraint firstItem="VMk-Az-Nqt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="40" id="ENu-Fp-z7o"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VMk-Az-Nqt" secondAttribute="trailing" constant="40" id="SIe-gq-zCp"/>
+                            <constraint firstItem="VMk-Az-Nqt" firstAttribute="top" secondItem="vWA-gg-yOF" secondAttribute="bottom" constant="50" id="mqy-0Y-trb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="showLabel" destination="VMk-Az-Nqt" id="ZXA-Vf-xyN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="room_btn_chat" width="25" height="25"/>
+    </resources>
+</document>
