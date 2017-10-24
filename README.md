@@ -47,3 +47,11 @@
 有好多种方法可以实现 UITextView 添加占位符，这个控件是使用 `drawRect:` 将文字画到 UITextView 上，个人觉得比其他方法在性能上能略微高效些。
 
 ![06.gif](https://github.com/Mayan29/MYCustomViews/blob/master/DATA/06.gif)
+
+### 07. MYChatToolsView 2.0（自定义键盘工具栏输入框 2.0 版本）
+
+相比 05. MYChatToolsView 优化了代码逻辑，实现输入文字换行，输入框随着文字换行高度改变。
+
+缺点是，没有实现限制文字换行行数，因为设置限制后，到达限制行数的时候文字不美观，后续调整吧，先不做处理了。
+
+![07.gif](https://github.com/Mayan29/MYCustomViews/blob/master/DATA/07.gif)
