@@ -52,12 +52,12 @@ static const NSUInteger cols = 3;  // 列数
     // 0.定义默认初始时，所有 cell 的位置的数据
     CGFloat cellW = (self.collectionView.bounds.size.width - self.sectionInset.left - self.sectionInset.right - (cols - 1) * self.minimumInteritemSpacing) / cols;
     
-    
     // 1.获取 cell 个数
     NSUInteger itemCount = [self.collectionView numberOfItemsInSection:0];
     
     // 2.给每个 cell 创建一个 UICollectionViewLayoutAttributes
-    for (int i = 0; i < itemCount; i++) {
+    // 这里 i = _cellAttrs.count，目的是上拉刷新的时候重新布局，之前布局好的 cell 就不重新计算位置了
+    for (NSInteger i = _cellAttrs.count; i < itemCount; i++) {
         
         // 2.1 根据 i 创建 indexPath
         NSIndexPath *indexPath = [NSIndexPath indexPathForItem:i inSection:0];
@@ -72,7 +72,7 @@ static const NSUInteger cols = 3;  // 列数
         NSUInteger minIndex = [self.totalHeights indexOfObject:@(minH)];
    
         CGFloat cellX = self.sectionInset.left + (self.minimumInteritemSpacing + cellW) * minIndex;
-        CGFloat cellY = minH + self.minimumLineSpacing;
+        CGFloat cellY = minH;
         attr.frame = CGRectMake(cellX, cellY, cellW, cellH);
         
         // 2.4 保存 attr
@@ -93,7 +93,7 @@ static const NSUInteger cols = 3;  // 列数
 - (CGSize)collectionViewContentSize
 {
     CGFloat maxH = [[self.totalHeights valueForKeyPath:@"@max.floatValue"] floatValue];
-    return CGSizeMake(0, maxH + self.sectionInset.bottom);
+    return CGSizeMake(0, maxH + self.sectionInset.bottom - self.minimumInteritemSpacing);
 }
 
 
