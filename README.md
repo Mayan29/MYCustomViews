@@ -55,3 +55,9 @@
 缺点是，没有实现限制文字换行行数，因为设置限制后，到达限制行数的时候文字不美观，后续调整吧，先不做处理了。
 
 ![07.gif](https://github.com/Mayan29/MYCustomViews/blob/master/DATA/07.gif)
+
+### 08. MYIMManager（简单实现 IM 服务端和客户端）
+
+使用 CocoaAsyncSocket 简单实现 IM 服务端和客户端。
+
+![08.gif](https://github.com/Mayan29/MYCustomViews/blob/master/DATA/08.gif)
