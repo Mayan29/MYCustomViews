@@ -61,3 +61,9 @@
 使用 CocoaAsyncSocket 简单实现 IM 服务端和客户端。
 
 ![08.gif](https://github.com/Mayan29/MYCustomViews/blob/master/DATA/08.gif)
+
+### 09. MYGiftAnimation（礼物连击数字动画）
+
+实现原理是重写 UILabel，将文字画两遍，从而实现文字边框效果
+
+![09.gif](https://github.com/Mayan29/MYCustomViews/blob/master/DATA/09.gif)

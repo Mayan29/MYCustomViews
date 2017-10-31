@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ePl-CU-nSm"/>
+                        <viewControllerLayoutGuide type="bottom" id="4HK-ZE-TzH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6c-46-Ahh">
+                                <rect key="frame" x="26" y="577" width="101" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.84364200909999998" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="礼物一">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="giftClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bKu-sI-Dll"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MIB-jS-tgs">
+                                <rect key="frame" x="137" y="577" width="101" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.84364200909999998" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="礼物二">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="giftClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wvQ-7g-YPS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vhf-TU-AMV">
+                                <rect key="frame" x="248" y="577" width="101" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.84364200909999998" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="礼物三">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="giftClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9ej-Gi-SzD"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JJ6-Y1-ltc" customClass="MYGiftNumberLabel">
+                                <rect key="frame" x="137.5" y="334" width="100" height="0.0"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="9LZ-hX-sbG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="f6c-46-Ahh" firstAttribute="width" secondItem="Vhf-TU-AMV" secondAttribute="width" id="4gN-0M-7hM"/>
+                            <constraint firstItem="Vhf-TU-AMV" firstAttribute="leading" secondItem="MIB-jS-tgs" secondAttribute="trailing" constant="10" id="8um-6C-qSX"/>
+                            <constraint firstItem="JJ6-Y1-ltc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="E54-ga-4gM"/>
+                            <constraint firstItem="f6c-46-Ahh" firstAttribute="height" secondItem="MIB-jS-tgs" secondAttribute="height" id="LR4-ff-aev"/>
+                            <constraint firstItem="f6c-46-Ahh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="TeZ-9y-LpV"/>
+                            <constraint firstItem="JJ6-Y1-ltc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="V5I-2m-mt0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Vhf-TU-AMV" secondAttribute="trailing" constant="10" id="YWP-ce-xRP"/>
+                            <constraint firstItem="f6c-46-Ahh" firstAttribute="width" secondItem="MIB-jS-tgs" secondAttribute="width" id="b8V-vM-0sF"/>
+                            <constraint firstItem="MIB-jS-tgs" firstAttribute="leading" secondItem="f6c-46-Ahh" secondAttribute="trailing" constant="10" id="baS-bb-M7t"/>
+                            <constraint firstItem="f6c-46-Ahh" firstAttribute="centerY" secondItem="Vhf-TU-AMV" secondAttribute="centerY" id="eBP-wr-vtX"/>
+                            <constraint firstItem="4HK-ZE-TzH" firstAttribute="top" secondItem="f6c-46-Ahh" secondAttribute="bottom" constant="60" id="o26-ep-rNR"/>
+                            <constraint firstItem="f6c-46-Ahh" firstAttribute="centerY" secondItem="MIB-jS-tgs" secondAttribute="centerY" id="oI4-oi-gU5"/>
+                            <constraint firstItem="f6c-46-Ahh" firstAttribute="height" secondItem="Vhf-TU-AMV" secondAttribute="height" id="uG2-Oe-I6N"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="giftNumberLabel" destination="JJ6-Y1-ltc" id="nBo-Cz-byT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="31.934032983508249"/>
+        </scene>
+    </scenes>
+</document>
