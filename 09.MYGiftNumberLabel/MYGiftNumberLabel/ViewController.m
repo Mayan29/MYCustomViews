@@ -1,8 +1,8 @@
 //
 //  ViewController.m
-//  MYGiftAnimation
+//  MYGiftNumberLabel
 //
-//  Created by mayan on 2017/10/30.
+//  Created by mayan on 2017/10/31.
 //  Copyright © 2017年 mayan. All rights reserved.
 //
 
@@ -20,7 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    
     _giftNumberLabel.outsideColor = [UIColor orangeColor];
     _giftNumberLabel.insideColor  = [UIColor whiteColor];
 }
@@ -35,5 +35,6 @@
         NSLog(@"动画完成");
     }];
 }
+
 
 @end

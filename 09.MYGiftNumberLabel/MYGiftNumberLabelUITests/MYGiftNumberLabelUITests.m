@@ -1,18 +1,18 @@
 //
-//  MYGiftAnimationUITests.m
-//  MYGiftAnimationUITests
+//  MYGiftNumberLabelUITests.m
+//  MYGiftNumberLabelUITests
 //
-//  Created by mayan on 2017/10/30.
+//  Created by mayan on 2017/10/31.
 //  Copyright © 2017年 mayan. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface MYGiftAnimationUITests : XCTestCase
+@interface MYGiftNumberLabelUITests : XCTestCase
 
 @end
 
-@implementation MYGiftAnimationUITests
+@implementation MYGiftNumberLabelUITests
 
 - (void)setUp {
     [super setUp];
